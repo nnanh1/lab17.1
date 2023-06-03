@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 17.1</title>
+    <link
+      rel="caninical"
+      href="https://getbootstrap.com/docs/5.3/examples/carousel"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Carousel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slid mb-4" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active bg-img1">
+          <img
+            src="https://images.alphacoders.com/112/112121.jpg"
+            class="d-block w-100"
+            style="width: 100%; height: 500px"
+            alt="..."
+          />
+          <div class="carousel-caption text-start">
+            <h1>Example headline</h1>
+            <p>Some representative placeholder content for the first slide.</p>
+            <p>
+              <a href="#" class="btn btn-primary btn-lg">Sign up today</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item bg-img2">
+          <img
+            src="https://wallpapercave.com/wp/wp2599602.jpg"
+            style="width: 100%; height: 500px"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption text-center">
+            <h1>Another example headline</h1>
+            <p>Some representative placeholder content for the second slide.</p>
+            <p>
+              <a href="#" class="btn btn-primary btn-lg">Learn more</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item bg-img3">
+          <img
+            src="https://images6.alphacoders.com/647/647637.jpg"
+            style="width: 100%; height: 500px"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide.</p>
+            <p>
+              <a href="#" class="btn btn-primary btn-lg">Browse gallery</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Three columns of text below the carousel -->
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <svg
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <h2 class="fw-normal">Heading</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            sint provident reprehenderit fugit excepturi iusto doloribus
+            voluptatem? Iure esse exercitationem in, minus quis aspernatur
+            totam! Sint qui amet distinctio sit.
+          </p>
+          <p>
+            <a href="#" class="btn btn-outline-primary">View more detail</a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <svg
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <h2 class="fw-normal">Heading</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            sint provident reprehenderit fugit excepturi iusto doloribus
+            voluptatem? Iure esse exercitationem in, minus quis aspernatur
+            totam! Sint qui amet distinctio sit.
+          </p>
+          <p>
+            <a href="#" class="btn btn-outline-primary">View more detail</a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <svg
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-gray)" />
+          </svg>
+          <h2 class="fw-normal">Heading</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            sint provident reprehenderit fugit excepturi iusto doloribus
+            voluptatem? Iure esse exercitationem in, minus quis aspernatur
+            totam! Sint qui amet distinctio sit.
+          </p>
+          <p>
+            <a href="#" class="btn btn-outline-primary">View more detail</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container d-flex">
+        <span>&copy;2017-2021 Company, Inc</span>
+        <ul class="d-flex me-auto">
+          <li><a class="me-4" href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+        <a class="" href="#">Back to top</a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
